@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Flight Fare Prediction</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style type="text/css">
+	*{
+	margin:0;
+	padding:0;
+	}
+	body{
+	background-image:url("Vistara.jpg");
+	background-position:center;
+	background-size:cover;
+	font-family:sans-serif;
+	}
+	.airlineform{
+	width:800px;
+	background-color:rgb(0,0,0,0.6);
+	margin:auto;
+	color:#FFFFFF;
+	padding:10px 0px 10px 0px;
+	text-align:center;
+	border-radius:15px 15px 0px 0px;
+	}
+	.main{
+	background-color:rgb(0,0,0,0.3);
+	width:800px;
+	margin:auto;
+	}
+	.Departure_Date{
+	position:relative;
+	line-height:40px;
+	border-radius:6px;
+	padding:0 22px;
+	font-size:16px;
+	}
+	.Arrival_Date{
+	position:relative;
+	line-height:40px;
+	border-radius:6px;
+	padding:0 22px;
+	font-size:16px;
+	}
+	.Source{
+	position:relative;
+	line-height:40px;
+	border-radius:12px;
+	padding:0 85px;
+	font-size:16px;
+	}
+	.Destination{
+	position:relative;
+	line-height:40px;
+	border-radius:12px;
+	padding:0 85px;
+	font-size:16px;
+	}
+	.Airline{
+	position:relative;
+	line-height:10px;
+	border-radius:12px;
+	padding:0 85px;
+	font-size:16px;
+	}
+	.Total_Stops{
+	position:relative;
+	line-height:40px;
+	border-radius:12px;
+	padding:0 85px;
+	font-size:16px;
+	}
+
+	</style>
+</head>
+
+<body>
+	<div class="airlineform"> <h1><b> Flight Fare Prediction</b></h1></div>
+	<div class ="main">
+	<form>
+	<center>
+	<label for="Departure_Date"><b>Departure_Date:</b></label><br>
+	<input type="datetime-local" class = "Departure_Date" id="Departure_Date" name="Departure_Date">
+	<br>
+	<br>
+	
+	<label for="Arrival_Date"><b>Arrival_Date:</b></label><br>                 
+	<input type="datetime-local" class = "Arrival_Date" id="Arrival_Date" name="Arrival_Date">
+	<br>
+	<br>
+	
+	<label for = "Source"><b>Source</b></label><br>
+	<select id = "Source" class = "Source" name = "Source"><br>
+	<option value = "New Delhi"> New Delhi </option>
+	<option value = "Kolkata"> Kolkata </option>
+	<option value = "Banglore"> Banglore </option>
+	<option value = "Mumbai"> Mumbai </option>
+	<option value = "Chennai"> Chennai </option>
+	</select>
+	<br>
+	<br>
+	
+	<label for = "Destination"><b>Destination</b></label><br>
+	<select id = "Destination" class = "Destination" name = "Destination"><br>
+	<option value = "New Delhi"> New Delhi </option>
+	<option value = "Kolkata"> Kolkata </option>
+	<option value = "Banglore"> Banglore </option>
+	<option value = "Hyderabad"> Hyderabad </option>
+	<option value = "Cochin"> Cochin </option>
+	</select>
+	
+	<br>
+	<br>
+	<label for = "Airline"><b>Airline</b></label><br>
+	<select id = "Airline" class = "Airline" name = "Airline"><br>
+	<option value = "Jet Airways"> Jet Airways </option>
+	<option value = "IndiGo"> IndiGo </option>
+	<option value = "Air India"> Air India </option>
+	<option value = "Multiple carriers"> Multiple carriers </option>
+	<option value = "SpiceJet"> SpiceJet </option>
+	<option value = "Vistara"> Vistara </option>
+	<option value = "Air Asia"> Air Asia </option>
+	<option value = "GoAir"> GoAir </option>
+	<option value = "Multiple carriers Premium economy"> Multiple carriers Premium economy </option>
+	<option value = "Jet Airways Business"> Jet Airways Business </option>
+	<option value = "Vistara Premium economy"> Vistara Premium economy </option>
+	<option value = "Trujet"> Trujet </option>
+	</select>
+	
+	<br>
+	<br>
+	<label for = "Total_Stops"><b>Total_Stops</b></label><br>
+	<select id = "Total_Stops" class = "Total_Stops" name = "Total_Stops"><br>
+	<option value = "0"> 0 </option>
+	<option value = "1"> 1 </option>
+	<option value = "2"> 2 </option>
+	<option value = "3"> 3 </option>
+	<option value = "4"> 4 </option>
+	</select>
+  
+	<br>
+	<br>
+	<input type ="submit" value = "Predict">
+	<br>
+	<br>
+	<h3> <b>Your Flight Fare is{{prediction_text}} INR<b></h3>
+	<br>
+	<br>
+	</center>
+	</form>	
+</body>
+</html>
